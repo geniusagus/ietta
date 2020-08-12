@@ -100,7 +100,7 @@ nav.open {
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }
-nav.open .nav-item {
+nav.open .menuitem {
   padding: 20px;
   letter-spacing: 0.2em;
   opacity: 1;
@@ -113,11 +113,11 @@ nav.open .nav-item {
   -webkit-transition-timing-function: ease-in, ease-in, ease;
           transition-timing-function: ease-in, ease-in, ease;
 }
-nav.open .nav-item:hover {
+nav.open .menuitem:hover {
   letter-spacing: 0.3em;
 }
 
-.nav-item {
+.menuitem {
   display: block;
   width: 100%;
   padding: 0px;
@@ -136,7 +136,7 @@ nav.open .nav-item:hover {
   -webkit-transition-timing-function: ease-out, ease-out, ease, ease;
           transition-timing-function: ease-out, ease-out, ease, ease;
 }
-.nav-item:hover {
+.menuitem:hover {
   color: grey;
 }
 
