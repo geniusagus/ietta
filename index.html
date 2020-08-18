@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
   <title>Agustín Ietta</title>
 </head>
+
 <body>
   <header>
-    <a class="logo">Logo</a>
+    <a class="logo">A</a>
     <label class="menu-toggle">
       <span class="hamburguer"></span>
       <span class="hamburguer"></span>
@@ -19,17 +22,90 @@
     <nav>
       <a class="menuitem" href="#home">Home</a>
       <a class="menuitem" href="#about">About</a>
-      <a class="menuitem" href="#work">Work</a>
+      <a class="menuitem" href="#work">Projects</a>
       <a class="menuitem" href="#contact">Contact</a>
     </nav>
   </header>
   <main>
-    <section id="home">home</section>
-    <section id="about">About</section>
-    <section id="work">Work</section>
-    <section id="contact">Contact</section>
+    <section class="home" id="home">
+      <div class="contenedor">
+        <h1 class="fade-in">Hi, i am</h1>
+        <h1 class="fade-in2">Agustín Ietta</h1>
+        <h3>UX/UI Designer | Audiovisual Designer</h3>
+        <a class="cta" href="#contact">Contact me</a>
+      </div>
+    </section>
+    <section class="centrar" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-center">
+            <img src="img/pr.jpg" alt="">
+          </div>
+            <div class="row justify-content-center">
+                   <a class="linkr" target="_blank" href="https://www.linkedin.com/in/agust%C3%ADn-ietta-4a6518169/">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:linkedin-filled" style="color: #2cc1af; font-size: 32px;"></span>
+                  </a>
+                  <a class="linkr" target="_blank" href="https://www.behance.net/agustinietta">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:behance-circle-filled" style="color: #2cc1af; font-size: 32px;"></span>
+                  </a>
+                  <a class="linkr" target="_blank" href="https://github.com/geniusagus">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:github-filled" style="color: #2cc1af; font-size: 32px;"></span>
+                  </a>
+            </div>
+          </div>
+          <div class="col">
+            <h2>About me</h2>
+            <h3 class="colorverde">UX/UI Designer | Audiovisual Designer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius libero consequuntur ab placeat laudantium
+              reiciendis, aspernatur blanditiis laborum minus amet tempore eligendi? Deserunt ducimus est ex veniam
+              eaque, facere culpa?</p>
+            <a class="cta2" href="">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <div class="container">
+      <h2>Projects</h2>
+    </div>
+    </section>
   </main>
+    <footer class="contacto" id="contact">
+      <div class="container">
+      <h2 class="text-center blanco m-4">Get in touch</h2>
+      <h4 class="text-center blanco m-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum dolor,</h4>
+      <div class="row align-items-center m-4">
+        <div class="col">
+          <div class="row justify-content-center align-items-center">
+            <img class="iconify2" src="img/mail.svg" alt="">
+            <p class="d-inline m-0 blanco">agustinfrancoietta@gmail.com</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row justify-content-center align-items-center">
+            <img class="iconify2" src="img/wsp.svg" alt="">
+            <p class="d-inline m-0 blanco">+541154656277</p>
+        </div>
+        </div>
+        <div class="col">
+          <div class="row justify-content-center align-items-center">
+          <a class="linkr" target="_blank" href="https://www.linkedin.com/in/agust%C3%ADn-ietta-4a6518169/">
+            <img class="iconify2" src="img/li.svg" alt="">
+           </a>
+          <a class="linkr" target="_blank" href="https://www.behance.net/agustinietta">
+            <img class="iconify2" src="img/be.svg" alt="">
+          </a>
+          <a class="linkr" target="_blank" href="https://github.com/geniusagus">
+            <img class="iconify2" src="img/gh.svg" alt="">
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 

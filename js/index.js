@@ -10,10 +10,10 @@ $( document ).ready(function() {
   });
   
   //Waypoints
-  var itemIndex;
-  $('.menuitem').on('click', function (event) {
-    event.preventDefault();
-    itemIndex = $(this).attr('href');
-    $('body, html').animate({scrollTop: $(itemIndex).offset().top - 0}, 1000)
-  });
+  //  var itemIndex;
+  //  $('.menuitem').on('click', function (event) {
+  //    event.preventDefault();
+  //   itemIndex = $(this).attr('href');
+  //   $('body, html').animate({scrollTop: $(itemIndex).offset().top - 0}, 1000)
+  //  });
 });
