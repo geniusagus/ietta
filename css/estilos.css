@@ -238,7 +238,19 @@ p {
 
 .contacto {
   background-color: #2CC1AF;
-  padding: 8rem; }
+  padding: 4rem; }
+
+.contfoto {
+  padding: 2rem; }
+
+.fit {
+  width: 100%;
+  object-fit: cover;
+  display: block; }
+
+.proyectsp {
+  padding: 2rem;
+  height: auto; }
 
 @-webkit-keyframes kenburns-bottom {
   0% {
@@ -287,3 +299,76 @@ p {
 .kenburns-bottom {
   -webkit-animation: kenburns-bottom 10s ease-in-out both;
   animation: kenburns-bottom 10s ease-in-out both; }
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 75%; }
+  h1 {
+    font-size: 4rem; }
+  .cta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #2CC1AF;
+    border: solid 2px transparent;
+    transition: 0.3s;
+    text-decoration: none; }
+  .contenedor {
+    margin: 1rem; }
+  .proyectsp {
+    padding: 2rem;
+    height: auto; }
+  .home {
+    background-image: url(../img/bgt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center; }
+  .contacto {
+    padding: 2rem; } }
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 70%; }
+  .cta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #2CC1AF;
+    border: solid 2px transparent;
+    transition: 0.3s;
+    text-decoration: none; }
+  .home {
+    background-image: url(../img/bgm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    height: 100vh; }
+  section {
+    padding: 2rem;
+    height: auto; }
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 4rem; }
+  .contenedor {
+    margin: 1rem; }
+  .centrar {
+    padding: 2rem;
+    margin: 2rem 0; }
+  .proyectsp {
+    padding: 2rem;
+    height: auto; }
+  .contacto {
+    padding: 2rem; } }

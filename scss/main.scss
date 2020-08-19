@@ -274,13 +274,138 @@ p{
 
 .contacto{
   background-color: $color;
-  padding: 8rem;
+  padding: 4rem;
   
 }
 
+.contfoto{
+  padding: 2rem;
+}
+
+.fit{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.proyectsp{
+  padding: 2rem;
+  height: auto;
+}
 
 @-webkit-keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}@keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 .fade-in{-webkit-animation:fade-in 1.2s ease-in-out both;animation:fade-in 1.2s ease-in-out both}
 .fade-in2{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both}
 .kenburns-bottom{-webkit-animation:kenburns-bottom 10s ease-in-out both;animation:kenburns-bottom 10s ease-in-out both}
+
+
+@media only screen and (max-width: 992px) {
+
+  html{
+    font-size: 75%;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  .cta{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: $color;
+    border: solid 2px transparent;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .contenedor{
+    margin: 1rem;
+  }
+
+  .proyectsp{
+    padding: 2rem;
+    height: auto;
+  }
+
+  .home{
+    background-image: url(../img/bgt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+  }
+
+  .contacto{
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+ 
+  html{
+    font-size: 70%;
+  }
+
+  .cta{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: $color;
+    border: solid 2px transparent;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .home{
+    background-image: url(../img/bgm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    height: 100vh;
+  }
+
+  section {
+    padding: 2rem;
+    height: auto;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 4rem;
+  }
+
+  .contenedor{
+    margin: 1rem;
+  }
+
+  .centrar{
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  .proyectsp{
+    padding: 2rem;
+    height: auto;
+  }
+
+  .contacto{
+    padding: 2rem;
+  }
+
+}
