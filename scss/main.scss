@@ -1,5 +1,8 @@
 
-$color: #2CC1AF;
+$color: #FCBE85;
+$blanco: #FFFFFF;
+$negro: #333333;
+$gris: #BDBDBD;
 
 * {
   margin: 0;
@@ -21,8 +24,7 @@ html{
 
 a {
   text-decoration: none;
-  color: black;
-  text-transform: uppercase;
+  color: $negro;
   font-size: 1em;
 }
 
@@ -30,7 +32,7 @@ a {
 header {
   position: fixed;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -101,7 +103,7 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  color: $negro;
   -webkit-transition: all 0.3s ease-out 0.2s;
   transition: all 0.3s ease-out 0.2s;
 }
@@ -152,9 +154,13 @@ nav.open .menuitem:hover {
 }
 
 
-section {
+section{
   padding: 5rem;
-  height: 100vh;
+}
+
+.rect{
+  position: absolute;
+  top:30px;
 }
 
 .home{
@@ -163,12 +169,14 @@ section {
   background-repeat: no-repeat;
   display: grid;
   align-items: center;
+  height: 100vh;
 }
 
 .centrar{
   display: grid;
   align-items: center;
   z-index: 1;
+  height: 70vh;
 }
 
 .contenedor{
@@ -176,37 +184,49 @@ section {
 }
 
 h1{
-  color: #ffffff;
+  color: $blanco;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 8rem;
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.36);
 }
 
 h2{
-  color: #3d3d3d;
+  color: $negro;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 4.8rem;
 }
 
 h3{
-  color: #45e3f8;
+  color: $color;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
 }
 
 h4{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
+  color: $negro;
 }
 
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: $gris;
+}
+
+
 p{
-  color: #3d3d3d;
+  color: $negro;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -216,8 +236,28 @@ p{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: $blanco;
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: $color;
+  border: solid 2px transparent;
+  border-radius: 2px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cta:hover{
+  color: $color;
+  background-color: transparent;
+  border: solid 2px $color;
+}
+.ctai{
+  font-family: 'Poppins', sans-serif;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: $blanco;
   display: inline-block;
   margin: 2rem 0;
   padding: 1rem 2rem;
@@ -227,18 +267,19 @@ p{
   text-decoration: none;
 }
 
-.cta:hover{
-  color: #ffffff;
+.ctai:hover{
+  color: $blanco;
   background-color: transparent;
   border: solid 2px $color;
 }
 
 .cta2{
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.6rem;
   transition: 0.3s;
   display: inline-block;
+  margin-left: 2rem;
 }
 
 
@@ -260,38 +301,62 @@ p{
 }
 
 .iconify2{
-  fill: #ffffff;
+  fill: $color;
   margin: 1.5rem;
 }
 
-.colorverde{
-  color: $color;
-}
-
-.blanco{
-  color: #ffffff;
-}
-
 .contacto{
-  background-color: $color;
-  padding: 4rem;
-  
+  padding: 5rem;
+}
+
+.mail{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
 }
 
 .contfoto{
-  padding: 2rem;
-}
+  padding: 1rem 0;
+} 
 
 .fit{
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  display: blo;
 }
 
-.proyectsp{
-  padding: 2rem;
-  height: auto;
+
+.noshad{
+  text-shadow: none;
 }
+
+.padrelinks{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-top: 4rem ;
+
+  li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: none;
+  }
+}
+
+.tarj{
+  padding: 6rem;
+  -webkit-box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
+  -moz-box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
+  box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
+  transition: 1s ease;
+}
+.tarj:hover{
+  transform: scale(1.1);
+}
+
 
 @-webkit-keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}@keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
@@ -310,12 +375,23 @@ p{
     font-size: 4rem;
   }
 
+  h3{
+    font-size: 2rem;
+  }
+
+  .centrar{
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    height: auto;
+  }
+
   .cta{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $blanco;
     display: inline-block;
     margin: 2rem 0;
     padding: 1rem 2rem;
@@ -353,20 +429,46 @@ p{
     font-size: 70%;
   }
 
+  header{
+  padding: 1rem;
+  background-color: $blanco;
+}
+
   .cta{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
-    text-transform: uppercase;
-    color: #ffffff;
+    color: $blanco;
     display: inline-block;
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1rem 2rem;
     background-color: $color;
     border: solid 2px transparent;
     transition: 0.3s;
     text-decoration: none;
   }
+
+  .ctai{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: $blanco;
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: $color;
+    border: solid 2px transparent;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .ctai:hover{
+    color: $blanco;
+    background-color: transparent;
+    border: solid 2px $color;
+  }
+  
 
   .home{
     background-image: url(../img/bgm.jpg);
@@ -375,6 +477,13 @@ p{
     display: grid;
     align-items: center;
     height: 100vh;
+  }
+
+  .centrar{
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    height: auto;
   }
 
   section {
@@ -387,11 +496,18 @@ p{
   }
 
   h2{
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
   }
 
   .contenedor{
-    margin: 1rem;
+    margin: 2rem;
   }
 
   .centrar{
@@ -407,5 +523,13 @@ p{
   .contacto{
     padding: 2rem;
   }
+
+.mail{
+  font-size: 1.6rem;
+}
+
+.padrelinks{
+  display: none;
+}
 
 }
