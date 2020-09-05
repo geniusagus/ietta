@@ -269,7 +269,7 @@ p {
 .mail {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 2.6rem; }
+  font-size: 2.2rem; }
 
 .contfoto {
   padding: 1rem 0; }
@@ -297,13 +297,24 @@ p {
 
 .tarj {
   padding: 6rem;
-  -webkit-box-shadow: 5px 5px 22px -1px rgba(252, 191, 133, 0.42);
-  -moz-box-shadow: 5px 5px 22px -1px rgba(252, 191, 133, 0.42);
-  box-shadow: 5px 5px 22px -1px rgba(252, 191, 133, 0.42);
+  -webkit-box-shadow: 5px 5px 20px -1px rgba(252, 191, 133, 0.42);
+  -moz-box-shadow: 5px 5px 20px -1px rgba(252, 191, 133, 0.42);
+  box-shadow: 5px 5px 20px -1px rgba(252, 191, 133, 0.42);
   transition: 1s ease; }
 
 .tarj:hover {
   transform: scale(1.1); }
+
+.hauto {
+  height: auto; }
+
+.vl {
+  border-left: 1px solid #FCBE85;
+  height: 1300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 25%; }
 
 @-webkit-keyframes kenburns-bottom {
   0% {
@@ -450,6 +461,8 @@ p {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem; }
+  h4 {
+    font-size: 1.4rem; }
   .contenedor {
     margin: 2rem; }
   .centrar {
@@ -463,4 +476,8 @@ p {
   .mail {
     font-size: 1.6rem; }
   .padrelinks {
-    display: none; } }
+    display: none; }
+  .tarj {
+    padding: 2rem; }
+  .mail {
+    font-size: 1.4rem; } }

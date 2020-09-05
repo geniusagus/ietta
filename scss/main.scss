@@ -312,7 +312,7 @@ p{
 .mail{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 .contfoto{
@@ -348,22 +348,33 @@ p{
 
 .tarj{
   padding: 6rem;
-  -webkit-box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
-  -moz-box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
-  box-shadow: 5px 5px 22px -1px rgba(252,191,133,0.42);
+  -webkit-box-shadow: 5px 5px 20px -1px rgba(252,191,133,0.42);
+  -moz-box-shadow: 5px 5px 20px -1px rgba(252,191,133,0.42);
+  box-shadow: 5px 5px 20px -1px rgba(252,191,133,0.42);
   transition: 1s ease;
 }
 .tarj:hover{
   transform: scale(1.1);
 }
 
+.hauto{
+  height: auto;
+}
+
+.vl {
+  border-left: 1px solid $color;
+  height: 1300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 25%;
+}
 
 @-webkit-keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}@keyframes kenburns-bottom{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 84%;transform-origin:50% 84%}100%{-webkit-transform:scale(1.25) translateY(15px);transform:scale(1.25) translateY(15px);-webkit-transform-origin:bottom;transform-origin:bottom}}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 .fade-in{-webkit-animation:fade-in 1.2s ease-in-out both;animation:fade-in 1.2s ease-in-out both}
 .fade-in2{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both}
 .kenburns-bottom{-webkit-animation:kenburns-bottom 10s ease-in-out both;animation:kenburns-bottom 10s ease-in-out both}
-
 
 @media only screen and (max-width: 992px) {
 
@@ -503,8 +514,11 @@ p{
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-
   }
+
+h4{
+  font-size: 1.4rem;
+}
 
   .contenedor{
     margin: 2rem;
@@ -530,6 +544,13 @@ p{
 
 .padrelinks{
   display: none;
+}
+
+.tarj{
+  padding: 2rem;
+}
+.mail{
+  font-size: 1.4rem;
 }
 
 }
